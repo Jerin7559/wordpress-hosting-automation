@@ -1,0 +1,6 @@
+*.pem
+*.log
+*.retry
+*.key
+*.crt
+*.swo
