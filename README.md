@@ -99,7 +99,8 @@ wordpress-hosting-automation/ │ ├── site.yml ├── ssl.yml ├──
 - Nginx → Handles HTTP/HTTPS requests  
 - PHP-FPM → Executes backend logic  
 - MariaDB → Stores application data  
-- Ansible → Automates deployment  
+- Ansible → Automates deployment
+- DuckDNS → Maps domain name to server IP for public access
 - SSL → Secures communication  
 
 ---
