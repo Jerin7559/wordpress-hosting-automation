@@ -1,62 +1,138 @@
-\# WordPress Hosting Automation using Ansible
+# 🚀 Automated WordPress Hosting using Ansible (LEMP Stack on RHEL 9)
 
+## 📌 Project Overview
+This project demonstrates how to automate the deployment of a WordPress website using **Ansible** on a **LEMP stack (Linux, Nginx, MariaDB, PHP)** running on **Red Hat Enterprise Linux 9**.
 
+The aim is to eliminate manual configuration and ensure **consistent, repeatable, and efficient deployment**.
 
-This project automates the deployment of a WordPress website on a Linux server using Ansible.
+---
 
+## 🏗️ Architecture
 
+User → Nginx → PHP-FPM → MariaDB  
+           ↑  
+        Ansible Automation  
 
-\## Technologies Used
+---
 
-\- Ansible
+## ⚙️ Technologies Used
 
-\- Nginx
+- AWS EC2 – Hosting server  
+- RHEL 9 – Operating system  
+- Ansible – Automation tool  
+- Nginx – Web server  
+- PHP-FPM – Backend processing  
+- MariaDB – Database  
+- WordPress – CMS  
+- phpMyAdmin – Database management  
+- Let’s Encrypt – SSL (HTTPS)  
+- SFTP – Secure file transfer  
+- DuckDNS – Domain mapping  
+- Git & GitHub – Version control  
 
-\- MariaDB / MySQL 10.6
+---
 
-\- PHP 8+
+## 🔧 Key Features
 
-\- WordPress
+- Automated LEMP stack installation  
+- WordPress deployment with database integration  
+- User-based web hosting structure  
+- HTTPS enabled using Let’s Encrypt  
+- Secure file access using SFTP  
+- Modular Ansible playbooks  
+- Repeatable and scalable deployment  
 
-\- phpMyAdmin
+---
 
-\- SFTP
+## 📂 Project Structure
+wordpress-hosting-automation/ │ ├── site.yml ├── ssl.yml ├── sftp.yml ├── inventory └── README.md
 
-\- Let's Encrypt SSL
+---
 
+## 🚀 Workflow
 
+### 1. Server Setup
+- Launch EC2 instance  
+- Configure security groups  
+- Install RHEL 9  
 
-\## Files
+### 2. Install LEMP Stack
+- Install Nginx  
+- Install PHP & PHP-FPM  
+- Install MariaDB  
 
-\- `site.yml` - main deployment playbook
+### 3. Ansible Automation
+- Write playbooks  
+- Configure services  
+- Automate setup  
 
-\- `ssl.yml` - SSL setup playbook
+### 4. WordPress Deployment
+- Download WordPress  
+- Configure database  
+- Setup virtual host  
 
-\- `sftp.yml` - SFTP setup playbook
+### 5. Enable HTTPS
+- Install Certbot  
+- Generate SSL certificate  
+- Configure HTTPS  
 
-\- `ansible.cfg` - Ansible configuration
+### 6. SFTP Setup
+- Create user  
+- Configure secure access  
+- Restrict permissions  
 
-\- `inventory` - managed host details
+---
 
-\- `requirements.yml` - required Ansible collections
+## 🔐 Security
 
+- HTTPS enabled using Let’s Encrypt  
+- Secure SSH access  
+- SFTP-based file transfer  
+- Protected database credentials  
 
+---
 
-\## Features
+---
 
-\- User-based website root under `/home/username/websitename/public`
+## 💡 Use Case
 
-\- WordPress installation
+- Nginx → Handles HTTP/HTTPS requests  
+- PHP-FPM → Executes backend logic  
+- MariaDB → Stores application data  
+- Ansible → Automates deployment  
+- SSL → Secures communication  
 
-\- phpMyAdmin access
+---
 
-\- Secure SFTP access
+## 🎯 Outcome
 
-\- Free SSL certificate with HTTPS
+- Automated deployment pipeline  
+- Reduced manual effort  
+- Improved consistency  
+- Real-world DevOps experience  
 
+---
 
+## 📚 Learning
 
-\## Security Note
+- Ansible automation  
+- Linux server management  
+- Web server configuration  
+- SSL and security setup  
+- DevOps workflow  
 
-Sensitive credentials have been removed from this repository.
+---
+
+## 🔗 Repository
+
+https://github.com/Jerin7559/wordpress-hosting-automation  
+
+---
+
+## 🙌 Author
+
+Jerin Joseph  
+DevOps & Cloud Enthusiast  
+
+---
 
